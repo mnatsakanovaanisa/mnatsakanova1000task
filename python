@@ -1,0 +1,238 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMq7cjPzCoZcMv7OJFhVNZA",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/mnatsakanovaanisa/mnatsakanova1000task/blob/main/python\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "задание 1"
+      ],
+      "metadata": {
+        "id": "t8Hei35X-MoE"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zUwK2Fg7-BAz",
+        "outputId": "bae096a9-8846-49ae-9ddf-d17e794c0bb4"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3\n"
+          ]
+        }
+      ],
+      "source": [
+        "ocenki = [4, 5, 3]\n",
+        "print(ocenki[2])"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "задание 2"
+      ],
+      "metadata": {
+        "id": "tG2wXvdk-QRQ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "chisla = [1, 2, 3, 4]\n",
+        "chisla.append(5)\n",
+        "print (\"сумма\", sum(chisla))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MpqLZ6Hu-R0X",
+        "outputId": "59eafe56-9703-44ac-8301-0167248dca19"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "metadata": {
+            "tags": null
+          },
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "сумма 15\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "задание3"
+      ],
+      "metadata": {
+        "id": "dbeUxuQD-tPN"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "chisla = [7, 12, 3, 9, 15, 6]\n",
+        "print (chisla[4])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GSLXerud-wfm",
+        "outputId": "83a52bcf-6ac7-4903-b987-372b1518b0af"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "metadata": {
+            "tags": null
+          },
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "15\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "задание 1"
+      ],
+      "metadata": {
+        "id": "EuSoIFYoAT1P"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "tochka = (3, 5)\n",
+        "tochka=(10, 5)\n",
+        "print(tochka)\n"
+      ],
+      "metadata": {
+        "id": "BlUFVa3bAclX"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "задание 2\n"
+      ],
+      "metadata": {
+        "id": "Lu35hFErBf6A"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = 1\n",
+        "b = 2\n",
+        "с=(b, a)\n",
+        "print(c)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 176
+        },
+        "id": "5GooF_ToBhyu",
+        "outputId": "31fa645c-c6b9-4362-e91b-42306fd25418"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "name 'c' is not defined",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipykernel_2014/4094435882.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      2\u001b[0m \u001b[0mb\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;36m2\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      3\u001b[0m \u001b[0mс\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mb\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0ma\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 4\u001b[0;31m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mc\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m: name 'c' is not defined"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "users {\n",
+        "    \"+11111111\": \"Tom\"\n",
+        "    \"+33333333\": \"Bob\"\n",
+        "    \"+55555555\": \"Alice\"\n",
+        "}\n",
+        "for key, value in users.items():\n",
+        "  print (f\"phone:{key} Users:{value}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 106
+        },
+        "id": "-LsnuWvzCjIc",
+        "outputId": "b559abe1-88f1-4396-b81a-a14942c9ba62"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "invalid syntax (1072911004.py, line 1)",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"/tmp/ipykernel_7762/1072911004.py\"\u001b[0;36m, line \u001b[0;32m1\u001b[0m\n\u001b[0;31m    users {\u001b[0m\n\u001b[0m          ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "ycwwYyylDhdT"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
