@@ -1,0 +1,684 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOGLdoJC61e4IMyJocjpyVd",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/mnatsakanovaanisa/mnatsakanova1000task/blob/main/series\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "series 1"
+      ],
+      "metadata": {
+        "id": "XxRSQkcny95p"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uHpPTpcDy7mQ",
+        "outputId": "5aa96a0a-d629-441f-876e-79828b2d5718"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[14, 43, 73, 57, 42, 46, 5, 3, 47, 12]\n",
+            "342\n"
+          ]
+        }
+      ],
+      "source": [
+        "import random\n",
+        "a= []\n",
+        "for i in range (10):\n",
+        "  num = random.randint(1,100)\n",
+        "  a.append(num)\n",
+        "sum1=sum (a)\n",
+        "print (a)\n",
+        "print (sum1)\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "series2"
+      ],
+      "metadata": {
+        "id": "3B3TiOSW0bLq"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import random\n",
+        "a= []\n",
+        "n=1\n",
+        "for _ in range (10):\n",
+        "  num = random.randint(1,100)\n",
+        "  a.append(num)\n",
+        "  n*=num\n",
+        "print (a)\n",
+        "print (n)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "VcCp816G0b0D",
+        "outputId": "4ccea935-7415-4e1c-aef2-28b341c4aad7"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[41, 37, 64, 46, 23, 27, 5, 18, 77, 21]\n",
+            "403615202538240\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "series3"
+      ],
+      "metadata": {
+        "id": "bstMCJIV02fS"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import random\n",
+        "a= []\n",
+        "n=1\n",
+        "for _ in range (10):\n",
+        "  num = random.randint(1,100)\n",
+        "  a.append(num)\n",
+        "  n+=num\n",
+        "  n=n/10\n",
+        "print (a)\n",
+        "print (n)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SvkoqmiD026N",
+        "outputId": "2d6caa82-171f-45de-9d50-1fc70b9ad616"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[98, 27, 74, 87, 5, 64, 93, 45, 93, 23]\n",
+            "3.2849544769000003\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "series4"
+      ],
+      "metadata": {
+        "id": "mDvK78TcNPbB"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n= int (input(\"введиет число \"))\n",
+        "narr =[]\n",
+        "sum1 =0\n",
+        "n1=1\n",
+        "import random\n",
+        "for i in range(n):\n",
+        "  a= random.randint(1, 100)\n",
+        "  narr.append(a)\n",
+        "  sum1= sum(narr)\n",
+        "  n1*=a\n",
+        "print(narr)\n",
+        "print(sum1)\n",
+        "print(n1)"
+      ],
+      "metadata": {
+        "id": "bh4VdkkkNRe5"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "series5"
+      ],
+      "metadata": {
+        "id": "biVUsf7mROAj"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n= int (input(\"введите число \"))\n",
+        "narr =[]\n",
+        "sum1 =0\n",
+        "import random\n",
+        "for i in range(n):\n",
+        "  a= random.uniform(1, 100)\n",
+        "  narr.append(a)\n",
+        "  it= [int(x) for x in narr]\n",
+        "  sum1= sum(it)\n",
+        "\n",
+        "print(narr)\n",
+        "print(sum1)\n",
+        "print(it)"
+      ],
+      "metadata": {
+        "id": "o-w1mktlRQdy"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "series 6"
+      ],
+      "metadata": {
+        "id": "Y2D6nW4VSPo_"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n= int (input(\"введите число \"))\n",
+        "narr =[]\n",
+        "sum1 =0\n",
+        "import random\n",
+        "for i in range(n):\n",
+        "  a= random.uniform(1, 100)\n",
+        "  narr.append(a)\n",
+        "  it= [num - int(num) for x in narr]\n",
+        "  sum1= sum(it)\n",
+        "\n",
+        "print(narr)\n",
+        "print(sum1)\n",
+        "print(it)"
+      ],
+      "metadata": {
+        "id": "P7VVxAaqSSvE"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "series 7"
+      ],
+      "metadata": {
+        "id": "IyaP3uFzSieU"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n= int (input(\"введите число \"))\n",
+        "narr =[]\n",
+        "sum1 =0\n",
+        "import random\n",
+        "for i in range(n):\n",
+        "  a= random.uniform(1, 100)\n",
+        "  narr.append(a)\n",
+        "  it= [round(num) for num in narr]\n",
+        "  sum1= sum(it)\n",
+        "\n",
+        "print(narr)\n",
+        "print(sum1)\n",
+        "print(it)"
+      ],
+      "metadata": {
+        "id": "MHyegIhtSkMm"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "series 8"
+      ],
+      "metadata": {
+        "id": "gcTzMll0Sugm"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n= int (input(\"введите число \"))\n",
+        "narr =[]\n",
+        "for i in range(n):\n",
+        "  a= int (input (\"введите число\"))\n",
+        "  narr.append(a)\n",
+        "for a in narr:\n",
+        "  if a %2==0:\n",
+        "    print(a, end=\"\")\n",
+        "    s+=1\n",
+        "print()\n",
+        "print(s)"
+      ],
+      "metadata": {
+        "id": "z-3_0WnVSv4Q"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "series9"
+      ],
+      "metadata": {
+        "id": "Z5YimY_1VQsB"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n= int (input(\"введите число \"))\n",
+        "narr =[]\n",
+        "import random\n",
+        "for i in range(n):\n",
+        "  a= random.randint(1, 100)\n",
+        "  narr.append(a)\n",
+        "for i in range(n):\n",
+        "  if narr %2!=0:\n",
+        "    print(i+1, end=\"\")\n",
+        "    s+=1\n",
+        "print()\n",
+        "print(s)"
+      ],
+      "metadata": {
+        "id": "w-giNdhpVS4c"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "series 10"
+      ],
+      "metadata": {
+        "id": "KiXbKrBzWIqF"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n= int (input(\"введите число \"))\n",
+        "narr =[]\n",
+        "import random\n",
+        "for i in range(n):\n",
+        "  a= random.randint(-100, 100)\n",
+        "  narr.append(a)\n",
+        "  print(narr)\n",
+        "for a in narr:\n",
+        "  if a>0:\n",
+        "    print(i+1, end=\"\")\n",
+        "    s+=1\n",
+        "if s>0:\n",
+        "  print (\"true\")\n",
+        "else:\n",
+        "  print(\"false\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "eZJD9dlAWKMu"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "series 11"
+      ],
+      "metadata": {
+        "id": "CKLsZIKxW2e3"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n= int (input(\"введите число \"))\n",
+        "s= int (input(\"введите число \"))\n",
+        "c=0\n",
+        "narr =[]\n",
+        "import random\n",
+        "for i in range(n):\n",
+        "  a= random.randint(-100, 100)\n",
+        "  narr.append(a)\n",
+        "  print(narr)\n",
+        "\n",
+        "for a in narr:\n",
+        "  if a<s:\n",
+        "    c+=1\n",
+        "if c>0:\n",
+        "  print (\"true\")\n",
+        "else:\n",
+        "  print(\"false\")"
+      ],
+      "metadata": {
+        "id": "Bx56EOLhW4QC"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "series12"
+      ],
+      "metadata": {
+        "id": "1RUSDFjZXR_t"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "c=0\n",
+        "narr =[]\n",
+        "import random\n",
+        "while True:\n",
+        "  a= random.randint(-100, 100)\n",
+        "  if a==0:\n",
+        "    break\n",
+        "  print(a, end=\"\")\n",
+        "  c+=1\n",
+        "print(c)"
+      ],
+      "metadata": {
+        "id": "0vURycyIXTkc"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "series 13"
+      ],
+      "metadata": {
+        "id": "TTytp-jrX4a-"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "c=0\n",
+        "narr =[]\n",
+        "import random\n",
+        "while True:\n",
+        "  a= random.randint(-100, 100)\n",
+        "  if a==0:\n",
+        "    break\n",
+        "  print(a, end=\"\")\n",
+        "  if a>0 and a%2==0:\n",
+        "    c+=a\n",
+        "print(c)"
+      ],
+      "metadata": {
+        "id": "cHYi6gV0X7mE"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "series14"
+      ],
+      "metadata": {
+        "id": "rRSQewKHYIH2"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "c=int(input(\"введите число\"))\n",
+        "s=0\n",
+        "narr =[]\n",
+        "import random\n",
+        "while True:\n",
+        "  a= random.randint(-100, 100)\n",
+        "  if a==0:\n",
+        "    break\n",
+        "  print(a, end=\"\")\n",
+        "  c+=1\n",
+        "print(c)"
+      ],
+      "metadata": {
+        "id": "SFrEusqYYKFI"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "series 15"
+      ],
+      "metadata": {
+        "id": "H682QAswhMne"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "9U5xYVyEhbor"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "series 16"
+      ],
+      "metadata": {
+        "id": "0Y6WWRyYhlMR"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import random\n",
+        "n= int (input(\"введите число \"))\n",
+        "c=random.randint(1, 10)\n",
+        "narr =[]\n",
+        "u=0\n",
+        "for i in range(c):\n",
+        "  a= random.randint(-100, 100)\n",
+        "  narr.append(a)\n",
+        "  print(narr)\n",
+        "for i in range(c):\n",
+        "  if narr[1]>n:\n",
+        "    u=i+1\n",
+        "print (u)\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "YCuu54mKioCz"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "series17"
+      ],
+      "metadata": {
+        "id": "RQ5XbtMRjT-n"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import random\n",
+        "n= int (input(\"введите число \"))\n",
+        "narr =[]\n",
+        "u=0\n",
+        "for i in range(n):\n",
+        "  a= random.randint(1, 100)\n",
+        "  narr.append(a)\n",
+        "  narr.sort()\n",
+        "  print(narr)\n",
+        "b=random.randint(1,100)\n",
+        "print (b)\n",
+        "narr.append(b)\n",
+        "narr.sort()\n",
+        "print (narr)"
+      ],
+      "metadata": {
+        "id": "YN1k7PEtjZlP"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "series18"
+      ],
+      "metadata": {
+        "id": "0zcSFzA4kICb"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import random\n",
+        "n= int (input(\"введите число \"))\n",
+        "narr =[]\n",
+        "for i in range(n):\n",
+        "  a= random.randint(1, 100)\n",
+        "  narr.append(a)\n",
+        "narr.sort()\n",
+        "print(narr)\n",
+        "for i in range(n):\n",
+        "  if i==0 or narr[i] !=narr[i-1]:\n",
+        "\n",
+        "print (narr[i])"
+      ],
+      "metadata": {
+        "id": "n_fpUKk7kJtj"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "series19"
+      ],
+      "metadata": {
+        "id": "2BAT6AkMkrqI"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import random\n",
+        "n= int (input(\"введите число \"))\n",
+        "narr =[]\n",
+        "u=0\n",
+        "for i in range(n):\n",
+        "  a= random.randint(1, 100)\n",
+        "  narr.append(a)\n",
+        "\n",
+        "print(narr)\n",
+        "for i in range(1, n):\n",
+        "  if narr[i]< narr[i-1]:\n",
+        "    print (narr[i])\n",
+        "    u+=1\n",
+        "print()\n",
+        "print (u)"
+      ],
+      "metadata": {
+        "id": "aVkVQaPqktYg"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "series20"
+      ],
+      "metadata": {
+        "id": "eqD3xhvelnP5"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import random\n",
+        "n= int (input(\"введите число \"))\n",
+        "narr =[]\n",
+        "u=0\n",
+        "for i in range(n):\n",
+        "  a= random.randint(1, 100)\n",
+        "  narr.append(a)\n",
+        "print(narr)\n",
+        "for i in range(n-1):\n",
+        "  if narr[i]< narr[i+1]:\n",
+        "    print (narr[i])\n",
+        "    u+=1\n",
+        "print ()\n",
+        "print (u)"
+      ],
+      "metadata": {
+        "id": "ilZxBMh1loz3"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
